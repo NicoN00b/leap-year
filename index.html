@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="bower_components/moment/min/moment.min.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
     <title>Leap year detector</title>
   </head>
   <body>
@@ -23,6 +28,11 @@
       <div id="result">
         <p><span class="year"></span> is <span class="not"></span> a leap year.</p>
       </div>
+      <hr noshade>
+    <br>
+    <h4>Well look at the time! </h4>
+      <h5 id="time"></h5>
+
     </div>
   </body>
 </html>

@@ -1,26 +1,19 @@
-var leapYear = function(year) {
-  if ((year % 4 ===0) && (year % 100 !== 0) || (year % 400 === 0)){
+// function Calendar(skinName) {
+//   this.skin = skinName;
+// }
+
+function helloWorld(){
+  return "hello world"
+}
+//what is the difference between a (named) function and a function expression in JS?
+
+function leapYear (year) {
+  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)){
     return true;
   } else {
     return false;
   }
-
 };
 
-$(document).ready(function() {
-  $("form#leap-year").submit(function(event) {
-    event.preventDefault();
-    var year = parseInt($("input#year").val());
-    var result = leapYear(year);
-
-    $(".year").text(year);
-    
-    if (!result) {
-      $(".not").text("not");
-    } else {
-      $(".not").text("");
-    }
-
-    $("#result").show();
-  });
-});
+exports.testing = leapYear;
+exports.calendarModule = leapYear;
